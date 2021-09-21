@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/TactilePaving002_2K_Normal.jpg-b87eacf15761c478faee44bfba500ce3.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Imports/Textures/TactilePaving002_2K-JPG/TactilePaving002_2K_Normal.jpg"
+dest_files=[ "res://.import/TactilePaving002_2K_Normal.jpg-b87eacf15761c478faee44bfba500ce3.stex" ]
+
+[params]
+
+compress/mode=1
+compress/lossy_quality=0.33
+compress/hdr_mode=1
+compress/bptc_ldr=0
+compress/normal_map=1
+flags/repeat=true
+flags/filter=true
+flags/mipmaps=true
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0

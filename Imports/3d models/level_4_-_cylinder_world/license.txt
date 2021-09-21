@@ -1,0 +1,11 @@
+Model Information:
+* title:	Level 4 - Cylinder World
+* source:	https://sketchfab.com/3d-models/level-4-cylinder-world-e3adb40bf8924991ae4a360b71101f29
+* author:	Nick Anderson Azemar (https://sketchfab.com/newnick1996)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Level 4 - Cylinder World" (https://sketchfab.com/3d-models/level-4-cylinder-world-e3adb40bf8924991ae4a360b71101f29) by Nick Anderson Azemar (https://sketchfab.com/newnick1996) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

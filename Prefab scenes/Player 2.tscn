@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/3rd person controller Player.gd" type="Script" id=1]
+[ext_resource path="res://Imports/3d models/player ball/luxoMaterial.material" type="Material" id=2]
+
+[sub_resource type="SphereMesh" id=1]
+material = ExtResource( 2 )
+
+[sub_resource type="SphereShape" id=2]
+
+[node name="Player" type="Spatial"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.56486, 0.683886 )
+
+[node name="KinematicBody" type="KinematicBody" parent="."]
+script = ExtResource( 1 )
+zoom_max = 250.0
+speed = 100.0
+minPitch = -80.0
+maxPitch = 30.0
+
+[node name="Camera pivot" type="Spatial" parent="KinematicBody"]
+
+[node name="Camera Boom" type="SpringArm" parent="KinematicBody/Camera pivot"]
+transform = Transform( 0.999848, 0, 0.0174524, 0, 1, 0, -0.0174524, 0, 0.999848, 0, 1.49901, 0 )
+spring_length = 30.0
+margin = 0.9
+
+[node name="CameraTarget" type="Spatial" parent="KinematicBody/Camera pivot/Camera Boom"]
+
+[node name="MeshInstance" type="MeshInstance" parent="KinematicBody"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="KinematicBody"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0 )
+shape = SubResource( 2 )
+
+[node name="InterpolatedCamera" type="InterpolatedCamera" parent="."]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 46.0249, 68.4159 )
+size = 7867.87
+far = 1000.0
+target = NodePath("../KinematicBody/Camera pivot/Camera Boom/CameraTarget")
+speed = 10.0
+enabled = true
